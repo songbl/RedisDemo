@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="test-discovery-instrumenter">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/lib/test-discovery-instrumenter.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
