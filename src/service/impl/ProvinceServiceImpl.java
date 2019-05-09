@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import dao.ProvinceDao;
 import dao.impl.ProvinceDaoImpl;
 import domain.Province;
-import jedis.util.JedisPoolUtils;
+import utils.JedisPoolUtils;
 import redis.clients.jedis.Jedis;
 import service.ProvinceService;
 
@@ -31,7 +31,6 @@ public class ProvinceServiceImpl implements ProvinceService {
     public String findAllJson() {
         //1.先从redis中查询数据
         //1.1获取redis客户端连接
-        System.out.println("r===============该进Redis中了.....");
         Jedis jedis = JedisPoolUtils.getJedis();
         String province_json = jedis.get("province");
 
